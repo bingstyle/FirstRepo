@@ -1,0 +1,23 @@
+name: 'update pob lib'
+#在有新的tag的时候触发action
+on: 
+  create:
+    tags: 
+      - v*
+
+jobs:
+  pod_lib_update:
+    runs-on: macos-latest
+
+    steps: 
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: pod lib update
+        uses: wlixcc/pod-lib-update-action@1.0.0
+        with:
+          
+        # spec仓库路径,确保有仓库的访问权限  
+          spec_repo_url: https://bingstyle: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@github.com/bingstyle/specs.git
+        # podspec的相对路径, 这里表示仓库根目录下 'FirstRepo.podspec' 文件
+          spec_file_path: /FirstRepo.podspec
