@@ -13,9 +13,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         
-      - name: GITHUB_TOKEN
-'     - uses: actions/labeler@v2
-        with: 
+      - uses: actions/labeler@v2
+        with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           
       - name: pod lib update
