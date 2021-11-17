@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v2
           
       - name: Pod lib update
-        uses: bingstyle/pod-lib-update-action@1.0.0
+        uses: bingstyle/pod-lib-update-action@1.0.1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
         # spec仓库路径,确保有仓库的访问权限  
