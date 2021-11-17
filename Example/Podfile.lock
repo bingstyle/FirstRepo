@@ -1,0 +1,18 @@
+PODS:
+  - FirstRepo (0.1.0):
+    - FirstRepo/Classes (= 0.1.0)
+  - FirstRepo/Classes (0.1.0)
+
+DEPENDENCIES:
+  - FirstRepo (from `../`)
+
+EXTERNAL SOURCES:
+  FirstRepo:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FirstRepo: 8dce8ba30c2f0aa5d92e761a6549c2775c11e81e
+
+PODFILE CHECKSUM: 258f326786689361bdeeb165bcbf7b102c80f36b
+
+COCOAPODS: 1.11.2

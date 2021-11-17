@@ -1,0 +1,27 @@
+{
+  "name": "FirstRepo",
+  "version": "0.1.0",
+  "summary": "A short description of FirstRepo.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/WeiXinbing/FirstRepo",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "WeiXinbing": "183292352@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/WeiXinbing/FirstRepo.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "subspecs": [
+    {
+      "name": "Classes",
+      "source_files": "FirstRepo/Classes/**/*"
+    }
+  ]
+}

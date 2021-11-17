@@ -1,0 +1,6 @@
+framework module FirstRepo {
+  umbrella header "FirstRepo-umbrella.h"
+
+  export *
+  module * { export * }
+}
