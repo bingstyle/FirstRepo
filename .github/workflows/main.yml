@@ -15,7 +15,7 @@ jobs:
           
       - uses: actions/labeler@v2
         with:
-          token: ${{ secrets.ACCESS_TOKEN }}
+          repo-token: ${{ secrets.ACCESS_TOKEN }}
           
       - name: Pod lib update
         uses: bingstyle/pod-lib-update-action@1.0.1
