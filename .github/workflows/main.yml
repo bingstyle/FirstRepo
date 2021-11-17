@@ -12,12 +12,16 @@ jobs:
     steps: 
       - name: Checkout
         uses: actions/checkout@v2
-
+        
+      - name: GITHUB_TOKEN
+'     - uses: actions/labeler@v2
+        with: 
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          
       - name: pod lib update
         uses: wlixcc/pod-lib-update-action@1.0.0
         with:
-          
         # spec仓库路径,确保有仓库的访问权限  
-          spec_repo_url: https://bingstyle:${{secrets.ACCESS_TOKEN}}@github.com/bingstyle/specs.git
+          spec_repo_url: https://github.com/bingstyle/specs.git
         # podspec的相对路径, 这里表示仓库根目录下 'FirstRepo.podspec' 文件
           spec_file_path: /FirstRepo.podspec
