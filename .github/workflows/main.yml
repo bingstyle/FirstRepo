@@ -15,12 +15,12 @@ jobs:
           
       - uses: actions/labeler@v2
         with:
-          repo-token: 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
+          token: ${{ secrets.ACCESS_TOKEN }}
           
       - name: Pod lib update
         uses: bingstyle/pod-lib-update-action@1.0.1
         with:
         # spec仓库路径,确保有仓库的访问权限  
-          spec_repo_url: https://bingstyle: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@github.com/bingstyle/specs.git
+          spec_repo_url: https://github.com/bingstyle/specs.git
         # podspec的相对路径, 这里表示仓库根目录下 'FirstRepo.podspec' 文件
           spec_file_path: /FirstRepo.podspec
