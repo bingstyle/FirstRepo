@@ -10,4 +10,5 @@ import Foundation
 struct Tools {
     
     let str = "Hello World"
+    let temp = ""
 }
