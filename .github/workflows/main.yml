@@ -13,6 +13,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
           
+      - uses: actions/labeler@v2
+        with:
+          repo-token: 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
+          
       - name: Pod lib update
         uses: bingstyle/pod-lib-update-action@1.0.1
         with:
