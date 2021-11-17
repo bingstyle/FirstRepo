@@ -18,6 +18,6 @@ jobs:
         with:
           
         # spec仓库路径,确保有仓库的访问权限  
-          spec_repo_url: https://bingstyle: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@github.com/bingstyle/specs.git
+          spec_repo_url: https://bingstyle:${{secrets.ACCESS_TOKEN}}@github.com/bingstyle/specs.git
         # podspec的相对路径, 这里表示仓库根目录下 'FirstRepo.podspec' 文件
           spec_file_path: /FirstRepo.podspec
